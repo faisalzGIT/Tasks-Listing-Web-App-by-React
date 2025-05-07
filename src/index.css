@@ -1,0 +1,18 @@
+@import "tailwindcss";
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #ddd6fe; /* Tailwind's violet-200 */
+    border-radius: 4px;
+  }
+  .custom-scrollbar {
+    scrollbar-color: #ddd6fe transparent;
+  }
+  
