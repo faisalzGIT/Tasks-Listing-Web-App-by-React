@@ -14,6 +14,7 @@ import { v4 as uuidv4 } from 'uuid';
 function App() {
     const [task, setTask] = useState("");
     const [tasks, setTasks] = useState([]);
+    const [errorMessage, setErrorMessage] = useState("");
 
     useEffect(() => {
         if (localStorage.getItem("tasks")) {
@@ -30,11 +31,17 @@ function App() {
     }
 
     const handleAdd = (e) => {
+        if(task ===""){
+            setErrorMessage("Please enter a task");
+            setTimeout(() => setErrorMessage(""), 3000);
+            return;
+        }
         e.preventDefault();
         const newTask = [...tasks, { id: uuidv4(), task, isCompleted: false }];
         setTasks(newTask);
         saveToLS(newTask);
         setTask("");
+        setErrorMessage("");
     }
 
     const handleCheckbox = (e, id) => {
@@ -78,7 +85,7 @@ function App() {
                 <h2 className="text-xl font-bold text-purple-900 text-center  m-auto mb-2 mt-3 tracking-wide border border-[#c9b2d9] px-2 w-[8vw] rounded-[6px]">My Tasks</h2>
                 <div className='border border-[#c9b2d9] rounded-[10px] p-2  w-fit text-center mb-1'>
                     <div className='displayingTasks flex flex-col gap-2 h-[45vh] w-[40vw] overflow-y-scroll scrollbar-purple  '>
-                        {tasks.length === 0 && <div className='text-center text-purple-200 font-semibold flex justify-center items-center h-full text-2xl'>No Tasks to To do!!!</div>}
+                        {tasks.length === 0 && <div className='text-center text-purple-200 font-semibold flex justify-center items-center h-full text-2xl'>No Tasks to do!!!</div>}
                         {tasks.map((item)=>{
 
                             return (
@@ -100,8 +107,8 @@ function App() {
                     {/* <hr className='h-[1px] text-purple-900 opacity-15 ' /> */}
                     
             </div>
+            {errorMessage && (<div className='text-center text-red-500 font-semibold relative bottom-0 transition-all duration-10000'>{errorMessage}</div>)}
         </div>
-
     </div>
     </>
   )
