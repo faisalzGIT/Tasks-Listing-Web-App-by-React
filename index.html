@@ -30,6 +30,7 @@
             font-optical-sizing: auto;
             font-style: normal;
             color: rgb(86, 1, 86);
+            background-color: rgb(246 238 255);
         }
 
         .monoton-regular {
@@ -42,6 +43,35 @@
 <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+        // This is a workaround for the "Uncaught ReferenceError: process is not defined" error
+        // that occurs when using Vite with React.
+        window.process = {
+            env: {
+                NODE_ENV: 'development'
+            }
+        };
+        // This is a workaround for the "Uncaught ReferenceError: __dirname is not defined" error
+        // that occurs when using Vite with React.
+        window.__dirname = '/';
+        window.__filename = '/index.html';
+        // This is a workaround for the "Uncaught ReferenceError: Buffer is not defined" error
+        // that occurs when using Vite with React.
+        window.Buffer = {
+            isBuffer: function (obj) {
+                return obj && typeof obj === 'object' && obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj);
+            }
+        };
+        // This is a workaround for the "Uncaught ReferenceError: process is not defined" error
+        // that occurs when using Vite with React.
+        window.process = {
+            env: {
+                NODE_ENV: 'development'
+            }
+        };
+        // This is a workaround for the "Uncaught ReferenceError: __dirname is not defined" error
+        // that occurs when using Vite with React.
+    </script>
 </body>
 
 </html>

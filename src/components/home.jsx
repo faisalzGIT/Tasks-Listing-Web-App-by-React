@@ -1,37 +1,105 @@
-import React from "react";
-import NAVBAR from "./navbar";
+// Note: This is a demonstration of the UI design.
+// In a real implementation, you would import React and react-router-dom
 
-const Home = () => {
-    return (
-        <>
-        <NAVBAR />
-        <div className="font-sans p-5">
-            <h1 className="text-center text-4xl text-green-500 font-bold mb-6">
-                Welcome to My To-Do App
-            </h1>
-            <p className="text-lg leading-relaxed mb-6">
-                This is a simple and efficient To-Do application designed to help you manage your tasks
-                effectively. The app is built with modern web technologies to ensure a seamless user
-                experience.
-            </p>
-            <h2 className="text-2xl text-blue-500 font-semibold mb-4">Technologies Used:</h2>
-            <ul className="list-disc list-inside text-lg leading-relaxed mb-6">
-                <li><strong>React.js:</strong> For building the user interface.</li>
-                <li><strong>JavaScript (ES6+):</strong> For implementing the app's logic.</li>
-                <li><strong>CSS:</strong> For styling the components and layout.</li>
-                <li><strong>HTML:</strong> For structuring the web pages.</li>
-            </ul>
-            <h2 className="text-2xl text-blue-500 font-semibold mb-4">About the Developer:</h2>
-            <p className="text-lg leading-relaxed mb-6">
-                This app was created by a passionate web developer who loves building intuitive and
-                user-friendly applications. The goal of this project is to demonstrate the power of
-                modern web development tools and frameworks.
-            </p>
-            <p className="text-lg leading-relaxed">
-                Feel free to explore the app and manage your tasks efficiently. Happy tasking!
-            </p>
+import { Link } from "react-router-dom";
+
+function HOME() {
+  return (
+    <div className="min-h-[80vh] bg-gradient-to-br from-purple-50 via-purple-100 to-white">
+      {/* Hero Section */}
+      <div className="min-h-[93vh] w-full flex justify-center items-center px-4">
+        <div className="max-w-4xl w-full bg-white  shadow-xl overflow-hidden">
+          {/* Card Header with Decorative Elements */}
+          <div className="relative">
+            <div className="absolute top-0 left-0 w-32 h-32 bg-purple-200 rounded-full -translate-x-16 -translate-y-16 opacity-80"></div>
+            <div className="absolute top-0 right-0 w-24 h-24 bg-purple-300 rounded-full translate-x-12 -translate-y-12 opacity-80"></div>
+            <div className="absolute bottom-0 left-1/2 w-40 h-40 bg-purple-100 rounded-full -translate-x-20 translate-y-20 opacity-80"></div>
+
+            {/* Content Container */}
+            <div className="relative p-8 md:p-14 text-center z-10">
+              {/* Logo/Brand Element */}
+              {/* <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-purple-600 to-purple-900 rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white text-2xl font-bold">iT</span>
+              </div>
+               */}
+              {/* Title with Gradient */}
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-wider ">
+                <span className="monoton-regular flex justify-center gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
+                  <span>Welcome</span> 
+                  <span>to</span>
+                  <span>iTasks</span>
+                </span>
+              </h1>
+              
+              {/* Tagline */}
+              <p className="text-xl text-purple-700 font-medium mb-10">
+                Organize your day, achieve your goals
+              </p>
+              
+              {/* Divider */}
+              <div className="flex items-center justify-center mb-10">
+                <div className="h-px w-16 bg-purple-200"></div>
+                <div className="mx-4">
+                  <svg className="w-6 h-6 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                  </svg>
+                </div>
+                <div className="h-px w-16 bg-purple-200"></div>
+              </div>
+              
+              {/* Features Section */}
+              <div className="mb-8">
+                <p className="text-gray-600 font-medium mb-6">
+                  Simple and effective task management
+                </p>
+                
+                {/* Feature Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                  <div className="bg-purple-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className="w-12 h-12 mx-auto mb-4 bg-purple-200 rounded-full flex items-center justify-center">
+                      <svg className="w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                      </svg>
+                    </div>
+                    <p className="text-purple-800 font-medium">Create and manage tasks</p>
+                  </div>
+                  
+                  <div className="bg-purple-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className="w-12 h-12 mx-auto mb-4 bg-purple-200 rounded-full flex items-center justify-center">
+                      <svg className="w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                      </svg>
+                    </div>
+                    <p className="text-purple-800 font-medium">Track your progress</p>
+                  </div>
+                  
+                  <div className="bg-purple-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className="w-12 h-12 mx-auto mb-4 bg-purple-200 rounded-full flex items-center justify-center">
+                      <svg className="w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                      </svg>
+                    </div>
+                    <p className="text-purple-800 font-medium">Stay organized</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* CTA Button */}
+
+              <Link to="/mytasks" className="inline-block bg-gradient-to-r from-purple-700 to-purple-900 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                Get Started
+              </Link>
+
+              {/* Subtitle */}
+              <p className="text-purple-500 text-sm mt-8 h-fit">
+                Join thousands of productive people today
+              </p>
+            </div>
+          </div>
         </div>
-    </>);
-};
+      </div>
+    </div>
+  );
+}
 
-export default Home;
+export default HOME;    
