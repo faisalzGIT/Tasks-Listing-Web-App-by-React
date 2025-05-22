@@ -55,14 +55,7 @@ src/
 
 
 
-## Credits
-- [React](https://react.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/)
-- [React Router](https://reactrouter.com/)
-
-
-**Developed by Mohammad Faisal**
+##Developed by Mohammad Faisal
 
 - [Portfolio](https://faisalzportfolio.netlify.app/)
 - [GitHub](https://github.com/faisalzGIT)
