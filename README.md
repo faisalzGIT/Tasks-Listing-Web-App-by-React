@@ -1,12 +1,79 @@
-# React + Vite
+# iTasks - Todo Listing Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, user-friendly web application to help you organize your day, manage your tasks, and achieve your goals efficiently.
 
-Currently, two official plugins are available:
+## Features
+- Create, edit, and delete tasks
+- Track your progress and mark tasks as complete
+- Responsive and clean UI with beautiful gradients
+- All data is stored locally in your browser for privacy and speed
+- Smooth navigation with React Router
+- Built with modern technologies: React.js, Tailwind CSS, Vite, and more
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **React.js**: Frontend framework for building interactive UIs
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development
+- **React Router**: Declarative routing for React applications
+- **Vite**: Fast build tool and development server
+- **Local Storage**: Persistent client-side data storage
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v16 or above recommended)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone <your-repo-url>
+   cd Todo-Listing-Web-App-by-React
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
+
+## Folder Structure
+```
+src/
+  App.jsx           # Main app component and routes
+  index.css         # Global styles (Tailwind CSS)
+  main.jsx          # Entry point
+  components/
+    about.jsx       # About page
+    developer.jsx   # Developer info page
+    home.jsx        # Home/landing page
+    myTasks.jsx     # Task management UI
+    navbar.jsx      # Navigation bar
+```
+
+## Customization
+- Update your developer info and links in `src/components/developer.jsx`.
+- Change the About page content in `src/components/about.jsx`.
+
+## Credits
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/)
+
+## License
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Developed by Mohammad Faisal**
+
+- [Portfolio](https://faisalzportfolio.netlify.app/)
+- [GitHub](https://github.com/faisalzGIT)
+- [LinkedIn](https://linkedin.com/in/faisalz1)
