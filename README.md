@@ -26,7 +26,7 @@ A modern, user-friendly web application to help you organize your day, manage yo
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone [text](https://github.com/faisalzGIT/Todo-Listing-Web-App-by-React)
+   git clone https://github.com/faisalzGIT/Todo-Listing-Web-App-by-React
    cd Todo-Listing-Web-App-by-React
    ```
 2. Install dependencies:
