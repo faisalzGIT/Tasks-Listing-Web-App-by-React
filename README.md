@@ -55,7 +55,7 @@ src/
 
 
 
-##Developed by Mohammad Faisal
+##Developed-by-Mohammad-Faisal
 
 - [Portfolio](https://faisalzportfolio.netlify.app/)
 - [GitHub](https://github.com/faisalzGIT)
