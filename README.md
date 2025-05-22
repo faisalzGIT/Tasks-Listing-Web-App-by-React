@@ -21,7 +21,7 @@ A modern, user-friendly web application to help you organize your day, manage yo
 
 ### Prerequisites
 - Node.js (v16 or above recommended)
-- npm or yarn
+- npm 
 
 ### Installation
 1. Clone the repository:
@@ -32,14 +32,10 @@ A modern, user-friendly web application to help you organize your day, manage yo
 2. Install dependencies:
    ```sh
    npm install
-   # or
-   yarn install
    ```
 3. Start the development server:
    ```sh
    npm run dev
-   # or
-   yarn dev
    ```
 4. Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
 
@@ -57,9 +53,7 @@ src/
     navbar.jsx      # Navigation bar
 ```
 
-## Customization
-- Update your developer info and links in `src/components/developer.jsx`.
-- Change the About page content in `src/components/about.jsx`.
+
 
 ## Credits
 - [React](https://react.dev/)
