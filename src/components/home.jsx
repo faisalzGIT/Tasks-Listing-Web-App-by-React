@@ -55,7 +55,7 @@ function HOME() {
                 
                 {/* Feature Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-                  <div className="bg-purple-50 rounded-xl p-3 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
+                  <div className="bg-purple-50 rounded-xl p-3 px-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
                     <div className=" hidden w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full md:flex items-center justify-center">
                       <svg className=" w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
