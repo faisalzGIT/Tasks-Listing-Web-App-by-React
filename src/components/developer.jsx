@@ -31,8 +31,8 @@ function Developer() {
       {/* Header Section */}
       <div className="mb-8 text-center">
         <div className="inline-block relative mb-2">
-          <h1 className="text-5xl monoton-regular font-bold  bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-purple-900 tracking-widest">Meet the Developer</h1>
-          <div className="absolute h-1 w-full bg-gradient-to-r from-purple-700 to-purple-900 bottom-[-1] rounded-full"></div>
+          <h1 className="text-3xl md:text-5xl monoton-regular font-bold  bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-purple-900 tracking-widest">Meet the Developer</h1>
+          <div className="absolute h-[2px] md:h-[3px] mt-3 md:mt-0  w-full bg-gradient-to-r from-purple-700 to-purple-900 bottom-[-1] rounded-full"></div>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ function Developer() {
 
       {/* Links Section */}
       <div className="bg-gradient-to-r from-purple-50 to-purple-100 p-6 rounded-xl shadow-md border border-purple-100  ">
-        <h2 className="text-3xl font-semibold text-purple-900 mb-4 border-l-4 border-purple-900 pl-3 ">
+        <h2 className="text-xl md:text-3xl font-semibold text-purple-900 mb-4 border-l-4 border-purple-900 pl-3 ">
           Connect With Me
         </h2>
         
@@ -74,7 +74,7 @@ function Developer() {
       </div>
 
       {/* Footer */}
-      <div className="mt-8 text-center text-purple-300 text-sm">
+      <div className="mt-4 text-center text-purple-300 text-sm">
         © {new Date().getFullYear()} Mohammad Faisal | Made with passion
       </div>
     </div>

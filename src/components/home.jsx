@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 function HOME() {
   return (
-    <div className="min-h-[80vh] bg-gradient-to-br from-purple-50 via-purple-100 to-white">
+    <div className="min-h-[88vh] w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white md:mt-1 mb-0">
       {/* Hero Section */}
-      <div className="min-h-[93vh] w-full flex justify-center items-center px-4">
-        <div className="max-w-4xl w-full bg-white  shadow-xl overflow-hidden">
+      <div className="min-h-[90vh] w-full px-0 pb-0 mb-0">
+        <div className=" w-full bg-white  shadow-xl overflow-hidden">
           {/* Card Header with Decorative Elements */}
           <div className="relative">
             <div className="absolute top-0 left-0 w-32 h-32 bg-purple-200 rounded-full -translate-x-16 -translate-y-16 opacity-80"></div>
@@ -23,7 +23,7 @@ function HOME() {
               </div>
                */}
               {/* Title with Gradient */}
-              <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-wider ">
+              <h1 className="text-2xl md:text-5xl font-extrabold mb-3 md:mb-1 tracking-wider ">
                 <span className="monoton-regular flex justify-center gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
                   <span>Welcome</span> 
                   <span>to</span>
@@ -32,12 +32,12 @@ function HOME() {
               </h1>
               
               {/* Tagline */}
-              <p className="text-xl text-purple-700 font-medium mb-10">
+              <p className="text-sm md:text-lg text-purple-700 font-medium mb-7 md:mb-10">
                 Organize your day, achieve your goals
               </p>
               
               {/* Divider */}
-              <div className="flex items-center justify-center mb-10">
+              <div className="flex items-center justify-center mb-7 md:mb-10">
                 <div className="h-px w-16 bg-purple-200"></div>
                 <div className="mx-4">
                   <svg className="w-6 h-6 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
@@ -86,12 +86,12 @@ function HOME() {
               
               {/* CTA Button */}
 
-              <Link to="/mytasks" className="inline-block bg-gradient-to-r from-purple-700 to-purple-900 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+              <Link to="/mytasks" className="inline-block md:my-1 bg-gradient-to-r from-purple-700 to-purple-900 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
                 Get Started
               </Link>
 
               {/* Subtitle */}
-              <p className="text-purple-500 text-sm mt-8 h-fit">
+              <p className="text-purple-500 text-sm mt-8 h-fit ">
                 Join thousands of productive people today
               </p>
             </div>

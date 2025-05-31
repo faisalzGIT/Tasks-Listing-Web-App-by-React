@@ -95,7 +95,7 @@ function MyTasks() {
           }
         `;
   return (<>
-        <div className="container  bg-purple-100 h-[93vh] overflow-hidden w-[100vw] flex justify-center items-center">
+        <div className="container w-full bg-purple-100 h-[93vh] overflow-hidden flex justify-center items-center">
         <div className="bg-white shadow-lg rounded-lg p-8 w-[700px] h-[88vh]">
             <h1 className="monoton-regular flex justify-center gap-2 text-4xl font-bold mb-4 text-center text-purple-900 tracking-wider"><span className="monoton-regular flex justify-center gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
                   <span>Welcome</span> 
@@ -110,7 +110,7 @@ function MyTasks() {
                 <hr className='h-[1px] text-purple-900 opacity-30 mb-0 mt-2' />
             <div className="w-full p-0  h-auto ">
                 <h2 className="text-xl font-bold text-purple-900 text-center  m-auto mb-2 mt-3 tracking-wide border border-[#c9b2d9] px-2 w-[8vw] rounded-[6px]">My Tasks</h2>
-                <div className='border border-[#c9b2d9] rounded-[10px] p-2  w-fit text-center mb-1'>
+                <div className='border border-[#c9b2d9] rounded-[10px] p-1  w-fit text-center mb-1'>
                     <div className='displayingTasks flex flex-col gap-2 h-[50vh] w-[40vw] overflow-y-scroll scrollbar-purple  '>
                         {tasks.length === 0 && <div className='text-center text-purple-200 font-semibold flex justify-center items-center h-full text-2xl'>No Tasks to do!!!</div>}
                         {tasks.map((item)=>{
