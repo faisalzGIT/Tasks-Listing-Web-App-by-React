@@ -23,7 +23,7 @@ function HOME() {
               </div>
                */}
               {/* Title with Gradient */}
-              <h1 className="text-sm md:text-5xl font-extrabold mb-0 md:mb-1 tracking-wider ">
+              <h1 className="text-sm md:text-5xl font-extrabold mb-0 md:mb-2 tracking-wider ">
                 <span className="monoton-regular flex justify-center gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
                   <span>Welcome</span> 
                   <span>to</span>
@@ -32,12 +32,12 @@ function HOME() {
               </h1>
               
               {/* Tagline */}
-              <p className="text-[14px] md:text-lg text-purple-700 font-medium mb-5 md:mb-10">
+              <p className="text-[14px] md:text-lg text-purple-700 font-medium">
                 Organize your day, achieve your goals
               </p>
               
               {/* Divider */}
-              <div className="flex items-center justify-center mb-7 md:mb-10">
+              <div className="flex items-center justify-center my-4 md:my-10">
                 <div className="h-px w-16 bg-purple-200"></div>
                 <div className="mx-4">
                   <svg className="w-6 h-6 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
