@@ -23,7 +23,7 @@ function HOME() {
               </div>
                */}
               {/* Title with Gradient */}
-              <h1 className="text-sm md:text-5xl font-extrabold mb-1 tracking-wider ">
+              <h1 className="text-sm md:text-5xl font-extrabold mb-0 md:mb-1 tracking-wider ">
                 <span className="monoton-regular flex justify-center gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
                   <span>Welcome</span> 
                   <span>to</span>
@@ -32,7 +32,7 @@ function HOME() {
               </h1>
               
               {/* Tagline */}
-              <p className="text-[14px] md:text-lg text-purple-700 font-medium mb-7 md:mb-10">
+              <p className="text-[14px] md:text-lg text-purple-700 font-medium mb-5 md:mb-10">
                 Organize your day, achieve your goals
               </p>
               
@@ -86,7 +86,7 @@ function HOME() {
               
               {/* CTA Button */}
 
-              <Link to="/mytasks" className="inline-block md:my-1 bg-gradient-to-r from-purple-700 to-purple-900 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+              <Link to="/mytasks" className="inline-block md:my-5 bg-gradient-to-r from-purple-700 to-purple-900 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
                 Get Started
               </Link>
 
