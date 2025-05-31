@@ -2,8 +2,28 @@
 // In a real implementation, you would import React and react-router-dom
 
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function HOME() {
+    const [winH, SetwinH] = useState(window.innerHeight);
+    const [boool, setBoool] = useState(true)
+
+    useEffect(()=>{
+        const handleResize = SetwinH(window.innerHeight);
+        window.addEventListener('resize', handleResize);
+
+        if(winH < 700) {
+            setBoool(winH < 700)
+        } else {
+            setBoool(winH < 700)
+        }
+
+        console.log(winH);
+
+    }, [window.innerHeight])
+
+
+
   return (
     <div className="h-[92vh] w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white  mb-0">
       {/* Hero Section */}
@@ -55,8 +75,8 @@ function HOME() {
                 
                 {/* Feature Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-[4vh] mb-10">
-                  <div className="bg-purple-50 h-20 md:h-40 rounded-xl py-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
-                    <div className=" hidden w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full md:flex items-center justify-center">
+                  <div className={`bg-purple-50 h-15 md:h-40 rounded-xl py-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col gap-0 ${boool && 'flex-row'} items-center justify-center `}>
+                    <div className={`${boool ? 'hidden' : 'flex'} w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full items-center justify-center`}>
                       <svg className=" w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                       </svg>
@@ -64,8 +84,8 @@ function HOME() {
                     <p className="w-[45vw] md:w-[20vw] m-auto text-purple-800 text-nowrap font-medium text-[14px]">Create & manage tasks</p>
                   </div>
                   
-                  <div className="bg-purple-50 h-20 md:h-40 rounded-xl py-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
-                    <div className=" hidden w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full md:flex items-center justify-center">
+                  <div className={`bg-purple-50 h-15 md:h-40 rounded-xl py-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col gap-0 ${boool && 'flex-row'} items-center justify-center `}>
+                    <div className={`${boool ? 'hidden' : 'flex'} w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full items-center justify-center`}>
                       <svg className=" w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
                       </svg>
@@ -73,8 +93,8 @@ function HOME() {
                     <p className="w-[45vw] md:w-[20vw] m-auto text-purple-800 text-nowrap font-medium text-[14px]">Track your progress</p>
                   </div>
                   
-                  <div className="bg-purple-50 h-20 md:h-40 rounded-xl py-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
-                    <div className=" hidden w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full md:flex items-center justify-center">
+                  <div className={`bg-purple-50 h-15 md:h-40 rounded-xl py-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col gap-0 ${boool && 'flex-row'} items-center justify-center `}>
+                    <div className={`${boool ? 'hidden' : 'flex'} w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full items-center justify-center`}>
                       <svg className=" w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                       </svg>
