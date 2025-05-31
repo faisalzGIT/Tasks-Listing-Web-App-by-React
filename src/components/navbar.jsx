@@ -7,10 +7,10 @@ function NAVBAR() {
         <Link to="/" className="text-purple-100 font-bold text-xl">iTasks</Link></div>
       <div className="text-white md:text-lg text-[14px]">
 
-        <Link to="/" className="ml-4 md:ml-5 font-semibold text-purple-100">Home</Link>
-        <Link to="/mytasks" className="ml-4 md:ml-5 font-semibold text-purple-100">Tasks</Link>
-        <Link to="/developer" className="ml-4 md:ml-5 font-semibold text-purple-100">Developer</Link>
-        <Link to="/about" className="ml-4 md:ml-5 font-semibold text-purple-100">About</Link>
+        <Link to="/" className="ml-3 md:ml-5 font-semibold text-purple-100">Home</Link>
+        <Link to="/mytasks" className="ml-3 md:ml-5 font-semibold text-purple-100">Tasks</Link>
+        <Link to="/developer" className="ml-3 md:ml-5 font-semibold text-purple-100">Developer</Link>
+        <Link to="/about" className="ml-3 md:ml-5 font-semibold text-purple-100">About</Link>
       </div>
     </nav>
   );
