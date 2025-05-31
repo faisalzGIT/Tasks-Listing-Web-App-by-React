@@ -25,6 +25,8 @@ function HOME() {
 
 
   return (
+
+
     <div className="h-[92vh] w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white  mb-0">
       {/* Hero Section */}
       <div className="h-[92vh] w-full px-0 pb-0 mb-0">
