@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 function HOME() {
   return (
-    <div className="min-h-[88vh] w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white md:mt-1 mb-0">
+    <div className="min-h-[88vh] w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white  mb-0">
       {/* Hero Section */}
-      <div className="min-h-[90vh] w-full px-0 pb-0 mb-0">
-        <div className=" w-full bg-white  shadow-xl overflow-hidden">
+      <div className="min-h-[88vh] w-full px-0 pb-0 mb-0">
+        <div className=" w-full bg-white  h-[92vh] shadow-xl overflow-hidden">
           {/* Card Header with Decorative Elements */}
           <div className="relative">
             <div className="absolute top-0 left-0 w-32 h-32 bg-purple-200 rounded-full -translate-x-16 -translate-y-16 opacity-80"></div>
