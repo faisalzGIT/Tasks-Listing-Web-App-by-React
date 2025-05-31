@@ -23,7 +23,7 @@ function HOME() {
               </div>
                */}
               {/* Title with Gradient */}
-              <h1 className="text-xl md:text-5xl font-extrabold mb-3 md:mb-1 tracking-wider ">
+              <h1 className="text-lg md:text-5xl font-extrabold mb-3 md:mb-1 tracking-wider ">
                 <span className="monoton-regular flex justify-center gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
                   <span>Welcome</span> 
                   <span>to</span>
