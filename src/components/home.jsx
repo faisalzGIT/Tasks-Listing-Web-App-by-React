@@ -8,7 +8,7 @@ function HOME() {
     <div className="min-h-[88vh] w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white  mb-0">
       {/* Hero Section */}
       <div className="min-h-[88vh] w-full px-0 pb-0 mb-0">
-        <div className=" w-full bg-white  h-[92vh] shadow-xl overflow-scroll">
+        <div className=" w-[100vw] bg-white h-[92vh] shadow-xl overflow-hidden scroll-py-11">
           {/* Card Header with Decorative Elements */}
           <div className="relative">
             <div className="absolute top-0 left-0 w-32 h-32 bg-purple-200 rounded-full -translate-x-16 -translate-y-16 opacity-80"></div>
@@ -23,7 +23,7 @@ function HOME() {
               </div>
                */}
               {/* Title with Gradient */}
-              <h1 className="text-sm md:text-5xl font-extrabold mb-3 md:mb-1 tracking-wider ">
+              <h1 className="text-sm md:text-5xl font-extrabold mb-1 tracking-wider ">
                 <span className="monoton-regular flex justify-center gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
                   <span>Welcome</span> 
                   <span>to</span>
@@ -32,7 +32,7 @@ function HOME() {
               </h1>
               
               {/* Tagline */}
-              <p className="text-[15px] md:text-lg text-purple-700 font-medium mb-7 md:mb-10">
+              <p className="text-[14px] md:text-lg text-purple-700 font-medium mb-7 md:mb-10">
                 Organize your day, achieve your goals
               </p>
               
