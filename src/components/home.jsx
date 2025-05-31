@@ -8,7 +8,7 @@ function HOME() {
     <div className="h-[92vh] w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white  mb-0">
       {/* Hero Section */}
       <div className="h-[92vh] w-full px-0 pb-0 mb-0">
-        <div className=" w-[100vw] bg-white h-[92vh] shadow-xl overflow-x-hidden overflow-y-scroll md:overflow-y-hidden ">
+        <div className=" w-[100vw] bg-white h-[92vh] shadow-xl overflow-x-hidden overflow-y-hidden md:overflow-y-hidden ">
           {/* Card Header with Decorative Elements */}
           <div className="relative">
             <div className="absolute top-0 left-0 w-32 h-32 bg-purple-200 rounded-full -translate-x-16 -translate-y-16 opacity-80"></div>
@@ -23,7 +23,7 @@ function HOME() {
               </div>
                */}
               {/* Title with Gradient */}
-              <h1 className="text-lg md:text-5xl w-fit m-auto font-extrabold mb-0 md:mb-2 tracking-wider ">
+              <h1 className="text-2xl md:text-5xl w-fit m-auto font-extrabold mb-0 md:mb-2 tracking-wider ">
                 <span className="monoton-regular flex justify-center gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
                   <span>Welcome</span> 
                   <span>to</span>
@@ -55,7 +55,7 @@ function HOME() {
                 
                 {/* Feature Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-                  <div className="bg-purple-50 rounded-xl py-6 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
+                  <div className="bg-purple-50 rounded-xl py-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
                     <div className=" hidden w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full md:flex items-center justify-center">
                       <svg className=" w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -64,7 +64,7 @@ function HOME() {
                     <p className="w-[45vw] md:w-[20vw] m-auto text-purple-800 text-nowrap font-medium text-[14px]">Create & manage tasks</p>
                   </div>
                   
-                  <div className="bg-purple-50 rounded-xl py-6 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
+                  <div className="bg-purple-50 rounded-xl py-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
                     <div className=" hidden w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full md:flex items-center justify-center">
                       <svg className=" w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
@@ -73,7 +73,7 @@ function HOME() {
                     <p className="w-[45vw] md:w-[20vw] m-auto text-purple-800 text-nowrap font-medium text-[14px]">Track your progress</p>
                   </div>
                   
-                  <div className="bg-purple-50 rounded-xl py-6 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
+                  <div className="bg-purple-50 rounded-xl py-5 md:p-6  shadow-sm hover:shadow-md transition-shadow duration-300 flex gap-0 items-center justify-center md:block">
                     <div className=" hidden w-12 h-12 md:mx-auto  my-3 md:mb-4 bg-purple-200 rounded-full md:flex items-center justify-center">
                       <svg className=" w-6 h-6 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
