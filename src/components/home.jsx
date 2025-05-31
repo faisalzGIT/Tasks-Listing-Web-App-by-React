@@ -32,7 +32,7 @@ function HOME() {
               </h1>
               
               {/* Tagline */}
-              <p className="text-sm md:text-lg text-purple-700 font-medium mb-7 md:mb-10">
+              <p className="text-[15px] md:text-lg text-purple-700 font-medium mb-7 md:mb-10">
                 Organize your day, achieve your goals
               </p>
               
