@@ -39,7 +39,7 @@ function Developer() {
       {/* About Section */}
       <div className="bg-gradient-to-r from-purple-50 to-purple-100   p-6 rounded-xl shadow-md border border-purple-100 mb-8 ">
 
-        <p className="text-purple-800 text-lg font-medium leading-relaxed">
+        <p className="text-purple-800 text-sm font-medium leading-relaxed">
           {developerInfo.description}
         </p>
       </div>
@@ -57,7 +57,7 @@ function Developer() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white hover:bg-purple-200 transition-all duration-300 p-4 rounded-lg flex flex-col items-center justify-center text-center border-2 border-purple-200 hover:border-purple-400"
+              className="group bg-white hover:bg-purple-200 transition-all duration-300 p-4 rounded-lg flex md:flex-col md:gap-0 gap-3 items-center justify-center text-center border-2 border-purple-200 hover:border-purple-400"
               onMouseEnter={() => setActiveLink(index)}
               onMouseLeave={() => setActiveLink(null)}
             >
@@ -67,7 +67,7 @@ function Developer() {
               <span className="font-semibold text-purple-900">
                 {link.label}
               </span>
-              <div className={`h-1 bg-purple-600 rounded-full mt-2 duration-300 ${activeLink === index ? 'w-16' : 'w-0'}`}></div>
+              <div className={`h-1 md:block hidden bg-purple-600 rounded-full mt-2 duration-300 ${activeLink === index ? 'w-16' : 'w-0'}`}></div>
             </a>
           ))}
         </div>
