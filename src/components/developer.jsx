@@ -29,7 +29,7 @@ function Developer() {
   return (
     <div className="mt-5 max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-xl">
       {/* Header Section */}
-      <div className="mb-8 text-center">
+      <div className="mb-[4vh] md:mb-8 text-center">
         <div className="inline-block relative mb-2">
           <h1 className="text-xl md:text-5xl monoton-regular font-bold  bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-purple-900 tracking-widest">Meet the Developer</h1>
           <div className="absolute h-[2px] md:h-[3px] mt-1 md:mt-0  w-full bg-gradient-to-r from-purple-700 to-purple-900 bottom-[-1] rounded-full"></div>
@@ -37,7 +37,7 @@ function Developer() {
       </div>
 
       {/* About Section */}
-      <div className="bg-gradient-to-r from-purple-50 to-purple-100   p-6 rounded-xl shadow-md border border-purple-100 mb-8 ">
+      <div className="bg-gradient-to-r from-purple-50 to-purple-100   p-6 rounded-xl shadow-md border border-purple-100 mb-[4vh] md:mb-8 ">
 
         <p className="text-purple-800 text-sm font-medium leading-relaxed">
           {developerInfo.description}
