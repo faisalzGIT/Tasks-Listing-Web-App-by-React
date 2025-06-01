@@ -31,8 +31,8 @@ function Developer() {
       {/* Header Section */}
       <div className="mb-8 text-center">
         <div className="inline-block relative mb-2">
-          <h1 className="text-3xl md:text-5xl monoton-regular font-bold  bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-purple-900 tracking-widest">Meet the Developer</h1>
-          <div className="absolute h-[2px] md:h-[3px] mt-3 md:mt-0  w-full bg-gradient-to-r from-purple-700 to-purple-900 bottom-[-1] rounded-full"></div>
+          <h1 className="text-xl md:text-5xl monoton-regular font-bold  bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-purple-900 tracking-widest">Meet the Developer</h1>
+          <div className="absolute h-[2px] md:h-[3px] mt-1 md:mt-0  w-full bg-gradient-to-r from-purple-700 to-purple-900 bottom-[-1] rounded-full"></div>
         </div>
       </div>
 
