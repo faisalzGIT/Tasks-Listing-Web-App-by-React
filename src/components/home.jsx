@@ -4,23 +4,26 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-function HOME() {
+function HOME() {    
     const [winH, SetwinH] = useState(window.innerHeight);
-    const [boool, setBoool] = useState(true)
+    const [boool, setBoool] = useState(null);
 
-    useEffect(()=>{
-        const handleResize = SetwinH(window.innerHeight);
+    useEffect(() => {
+        const handleResize = () => {
+            const height = window.innerHeight;
+            SetwinH(height);
+            setBoool(height < 700);
+        };
+
+        // Add event listener
         window.addEventListener('resize', handleResize);
 
-        if(winH < 700) {
-            setBoool(winH < 700)
-        } else {
-            setBoool(winH < 700)
-        }
+        // Call handler right away to update initial state
+        handleResize();
 
-        console.log(winH);
-
-    }, [window.innerHeight])
+        // Cleanup function to remove event listener
+        return () => window.removeEventListener('resize', handleResize);
+    }, [])
 
 
 
