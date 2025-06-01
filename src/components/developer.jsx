@@ -27,7 +27,7 @@ function Developer() {
   };
 
   return (
-    <div className="mt-0 md:mt-5 max-w-3xl h-[92vh] mx-auto bg-white p-4 md:p-8 md:rounded-2xl shadow-xl">
+    <div className="mt-0 md:mt-5 max-w-3xl h-[92vh] md:h-auto mx-auto bg-white p-4 md:p-8 md:rounded-2xl shadow-xl ">
       {/* Header Section */}
       <div className="mb-[2vh] md:mb-8 text-center">
         <div className="inline-block relative mb-2">
@@ -37,7 +37,7 @@ function Developer() {
       </div>
 
       {/* About Section */}
-      <div className="bg-gradient-to-r from-purple-50 to-purple-100  p-4 md:p-5 rounded-xl shadow-md border border-purple-100 mb-[2vh] md:mb-8 ">
+      <div className=" bg-gradient-to-r from-purple-50 to-purple-100  p-4 md:p-5 rounded-xl shadow-md border border-purple-100 mb-[2vh] md:mb-8 ">
 
         <p className="text-purple-800 text-sm font-medium leading-relaxed">
           {developerInfo.description}
@@ -74,7 +74,7 @@ function Developer() {
       </div>
 
       {/* Footer */}
-      <div className="mt-4 text-center text-purple-300 text-sm">
+      <div className="mt-4 text-center text-gray-300 text-sm">
         © {new Date().getFullYear()} Mohammad Faisal | Made with passion
       </div>
     </div>
