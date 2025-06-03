@@ -8,7 +8,7 @@ function Developer() {
   const developerInfo = {
     name: "Mohammad Faisal",
     title: "Full-Stack Web Developer",
-    description: "Hi! I'm Mohammad Faisal, a passionate Frontend web developer focused on building clean and efficient web applications. I love working with modern JavaScript frameworks and creating tools that help people stay productive.",
+    description: "Hi! I'm Mohammad Faisal, a passionate web developer focused on building clean and efficient web applications. Currently I work with modern JavaScript, React, REST APIs and Tailwind CSS to make Better Frontend.",
     links: [
       {
         label: "My Portfolio",
