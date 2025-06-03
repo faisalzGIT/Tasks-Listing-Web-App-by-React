@@ -14,7 +14,7 @@ export function MyProvider({ children }) {
         const handleResize = () => {
             const height = window.innerHeight;
             SetwinH(height);
-            setBoool(height < 720);
+            setBoool(height < 710);
         };
   
         // Add event listener
