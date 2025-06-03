@@ -2,30 +2,11 @@
 // In a real implementation, you would import React and react-router-dom
 
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useMyContext } from '../context/MyContext'
 
-function HOME() {    
-    const [winH, SetwinH] = useState(window.innerHeight);
-    const [boool, setBoool] = useState(null);
+function HOME() {   
 
-    useEffect(() => {
-        const handleResize = () => {
-            const height = window.innerHeight;
-            SetwinH(height);
-            setBoool(height < 800);
-        };
-
-        // Add event listener
-        window.addEventListener('resize', handleResize);
-
-        // Call handler right away to update initial state
-        handleResize();
-
-        // Cleanup function to remove event listener
-        return () => window.removeEventListener('resize', handleResize);
-    }, [])
-
-
+  const {boool} = useMyContext();
 
   return (
 

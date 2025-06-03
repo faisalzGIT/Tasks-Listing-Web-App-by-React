@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useMyContext } from "../context/MyContext";
 
 function Developer() {
-  const [activeLink, setActiveLink] = useState(null);
+    const [activeLink, setActiveLink] = useState(null);
+    const { boool } = useMyContext();  
   
   const developerInfo = {
     name: "Mohammad Faisal",
@@ -57,7 +59,7 @@ function Developer() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white hover:bg-purple-200 transition-all duration-300 p-4 rounded-lg flex md:flex-col md:gap-0 gap-3 items-center justify-center text-center border-2 border-purple-200 hover:border-purple-400"
+              className={`group bg-white hover:bg-purple-200 transition-all duration-300 p-4 rounded-lg flex  gap-3 items-center justify-center text-center border-2 border-purple-200 hover:border-purple-400 ${!boool && 'flex-col gap-0'}`}
               onMouseEnter={() => setActiveLink(index)}
               onMouseLeave={() => setActiveLink(null)}
             >

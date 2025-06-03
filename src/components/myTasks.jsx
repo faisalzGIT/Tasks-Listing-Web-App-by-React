@@ -11,7 +11,6 @@ function MyTasks() {
     const [errorMessage, setErrorMessage] = useState("");
     const [isClosing, setIsClosing] = useState(false);
 
-
     useEffect(() => {
         if (localStorage.getItem("tasks")) {
             setTasks(JSON.parse(localStorage.getItem("tasks")));
