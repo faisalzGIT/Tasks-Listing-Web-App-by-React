@@ -11,10 +11,10 @@ function HOME() {
   return (
 
 
-    <div className="h-[92vh] w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white  mb-0">
+    <div className="h-[87vh] w-full bg-gradient-to-br from-purple-50 via-purple-100 to-white  mb-0">
       {/* Hero Section */}
-      <div className="h-[92vh] w-full px-0 pb-0 mb-0">
-        <div className=" w-[100vw] bg-white h-[92vh] shadow-xl overflow-x-hidden overflow-y-scroll md:overflow-y-hidden ">
+      <div className="h-[87vh] w-full px-0 pb-0 mb-0">
+        <div className=" w-[100vw] bg-white h-[87vh] shadow-xl overflow-x-hidden overflow-y-scroll md:overflow-y-hidden ">
           {/* Card Header with Decorative Elements */}
           <div className="relative">
             <div className="absolute top-0 left-0 w-32 h-32 bg-purple-200 rounded-full -translate-x-16 -translate-y-16 opacity-80"></div>
