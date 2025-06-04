@@ -8,7 +8,7 @@ function Developer() {
   const developerInfo = {
     name: "Mohammad Faisal",
     title: "Full-Stack Web Developer",
-    description: `Hi! I'm Mohammad Faisal, a passionate web developer focused on building clean and efficient web applications. Currently I work with modern JavaScript, React, REST APIs, Tailwind CSS and other stuff to become a Better Frontend Developer.`,
+    description: `Hi! I'm Mohammad Faisal, a passionate web developer focused on building clean and efficient web applications. Currently I work with modern JavaScript, React, REST APIs, Tailwind CSS and other stuff. I am Aiming to become an Expert in Full stack Developement.`,
     links: [
       {
         label: "My Portfolio",
@@ -33,7 +33,13 @@ function Developer() {
       {/* Header Section */}
       <div className="mb-[2vh] md:mb-8 text-center">
         <div className="inline-block relative mb-2">
-          <h1 className="text-xl md:text-5xl monoton-regular font-bold  bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-purple-900 tracking-widest">Meet the Developer</h1>
+          <h1 className="text-xl md:text-5xl monoton-regular font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-purple-900 tracking-widest">
+            <span className="flex justify-center md:gap-5 gap-2">
+              <span>Meet</span>
+              <span>the</span>
+              <span>Developer</span>
+            </span>
+          </h1>
           <div className="absolute h-[2px] md:h-[3px] mt-1 md:mt-0  w-full bg-gradient-to-r from-purple-700 to-purple-900 bottom-[-1] rounded-full"></div>
         </div>
       </div>
