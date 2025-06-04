@@ -65,7 +65,7 @@ function Developer() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group bg-white hover:bg-purple-200 transition-all duration-300 p-4 rounded-lg flex  gap-3 items-center justify-center text-center border-2 border-purple-200 hover:border-purple-400 ${!boool && 'flex-col gap-0'}`}
+              className={`group bg-white hover:bg-purple-200 transition-all duration-300 p-4 rounded-lg  text-center border-2 border-purple-200 hover:border-purple-400  items-center justify-center ${boool? 'flex gap-3 md:flex-col': 'flex flex-col gap-0'}`}
               onMouseEnter={() => setActiveLink(index)}
               onMouseLeave={() => setActiveLink(null)}
             >
@@ -75,7 +75,7 @@ function Developer() {
               <span className="font-semibold text-purple-900">
                 {link.label}
               </span>
-              <div className={`h-1 md:block hidden bg-purple-600 rounded-full mt-2 duration-300 ${activeLink === index ? 'w-16' : 'w-0'}`}></div>
+              <div className={`h-1 md:block hidden bg-purple-600 rounded-full mt-2 duration-300 m-auto ${activeLink === index ? 'w-16' : 'w-0'}`}></div>
             </a>
           ))}
         </div>
