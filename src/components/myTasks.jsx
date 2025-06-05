@@ -94,23 +94,31 @@ function MyTasks() {
           }
         `;
   return (<>
-        <div className="container w-full bg-purple-100 h-[93vh] overflow-hidden flex justify-center items-center">
-        <div className="bg-white shadow-lg rounded-lg p-8 w-[700px] h-[88vh]">
-            <h1 className="monoton-regular flex justify-center gap-2 text-4xl font-bold mb-4 text-center text-purple-900 tracking-wider"><span className="monoton-regular flex justify-center gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
+        <div className="containerr mt-0 w-full bg-purple-100 h-[92vh] overflow-hidden flex justify-center items-center">
+        <div className="bg-white shadow-lg rounded-lg p-3 md:p-8 m-0 w-[700px] h-[92vh] md:h-[86vh]">
+            {/* <h1 className="monoton-regular flex justify-center gap-2 text-2xl md:text-4xl font-bold mb-4 text-center text-purple-900 tracking-wider">
+                <span className="monoton-regular flex justify-center gap-2 md:gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-purple-800 to-purple-900">
                   <span>Welcome</span> 
                   <span>to</span>
                   <span>iTasks</span>
-                </span></h1>
-            <p className=" mb-4 text-center text-purple-900">Your task management solution</p>
-            <form className='text-center flex gap-1.5 h-14 ' >
+                </span>
+            </h1> */}
+            {/* <p className="text-2xl md:text-4xl mb-2 text-purple-900 monoton-regular w-full ">
+                <div className='flex justify-center gap-2 md:gap-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-purple-900'>
+                    <span>Stay</span>
+                    <span>consistent</span>
+                </div>
+            </p> */}
+            {/* <div className="mb-4 md:w-full  h-[2px] md:h-[3px] bg-purple-900 m-auto rounded-full"></div> */}
+            <form className='text-center flex gap-1.5 h-14 mt-2 md:mt-0' >
                 <input type="text" onChange={handleChange} value={task} placeholder="Enter your task" className=" ring-1 ring-purple-900 focus:ring-purple-800 focus:ring-2 focus:outline-none  rounded-lg p-2 w-[80%] h-12 mb-4" />
-                <button onClick={handleAdd} className="bg-purple-900 hover:bg-purple-800 text-white rounded-lg w-30 h-12 border hover:border-purple-900 border-purple-900  transition-all duration-200 font-semibold "> Add </button>
+                <button onClick={handleAdd} className="bg-purple-900 hover:bg-purple-800 text-white rounded-lg px-3 md:px-0 md:w-30 h-12 border hover:border-purple-900 border-purple-900  transition-all duration-200 font-semibold "> Add </button>
             </form>
-                <hr className='h-[1px] text-purple-900 opacity-30 mb-0 mt-2' />
+                {/* <hr className='h-[1px] text-purple-900 opacity-30 mb-0 mt-2' /> */}
             <div className="w-full p-0  h-auto ">
-                <h2 className="text-xl font-bold text-purple-900 text-center  m-auto mb-2 mt-3 tracking-wide border border-[#c9b2d9] px-2 w-[8vw] rounded-[6px]">My Tasks</h2>
-                <div className='border border-[#c9b2d9] rounded-[10px] p-1  w-fit text-center mb-1'>
-                    <div className='displayingTasks flex flex-col gap-2 h-[50vh] w-[40vw] overflow-y-scroll scrollbar-purple  '>
+                <h2 className="text-xl font-bold text-purple-900 text-center m-auto mb-4 mt-3 tracking-wide border border-[#c9b2d9] px-2 w-fit md:w-[8vw] rounded-[6px]">My Tasks</h2>
+                <div className='border border-[#c9b2d9] rounded-[10px] p-1 w-full md:w-fit text-center mb-1 mt-2'>
+                    <div className='displayingTasks flex flex-col gap-2 h-[70vh] md:h-[60vh] w-full md:w-[40vw] overflow-y-scroll scrollbar-purple'>
                         {tasks.length === 0 && <div className='text-center text-purple-200 font-semibold flex justify-center items-center h-full text-2xl'>No Tasks to do!!!</div>}
                         {tasks.map((item)=>{
 

@@ -15,7 +15,7 @@ return (
                     <span className="monoton-regular text-lg md:text-4xl font-bold mb-0 md:mb-1 text-purple-900 md:tracking-wider">Was</span>
                     <span className="monoton-regular text-lg md:text-4xl font-bold mb-0 md:mb-1 text-purple-900 md:tracking-wider">Made</span>
                 </h1>
-                <div className="mb-4 md:w-[700px] h-[3px] md:h-[4px] bg-purple-900 m-auto rounded-4xl"></div>
+                <div className="mb-4 md:w-[700px] h-[2px] md:h-[4px] bg-purple-900 m-auto rounded-4xl"></div>
                 <p className="text-[16px] text-purple-900 font-semibold mb-6 w-full">
                     <strong>iTasks</strong> is a modern, Responsive, and user-friendly Todo Listing Web
                     App designed to help you organize your day and achieve your goals
