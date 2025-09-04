@@ -106,7 +106,7 @@ function MyTasks() {
             <div className="w-full p-0  h-auto ">
                 <h2 className="text-xl font-bold text-purple-900 text-center m-auto mb-4 mt-3 tracking-wide border border-[#c9b2d9] px-2 w-fit md:w-[8vw] rounded-[6px]">My Tasks</h2>
                 <div className='border border-[#c9b2d9] rounded-[10px] p-1 w-full md:w-full text-center mb-1 mt-2'>
-                    <div className='displayingTasks flex flex-col gap-2 h-[70vh] md:h-[60vh] w-full md:w-[40vw] overflow-y-scroll scrollbar-purple'>
+                    <div className='displayingTasks flex flex-col gap-2 h-[70vh] md:h-[60vh] w-full md:w-full overflow-y-scroll scrollbar-purple'>
                         {tasks.length === 0 && <div className='text-center text-purple-200 font-semibold flex justify-center items-center h-full text-2xl'>No Tasks to do!!!</div>}
                         {tasks.map((item)=>{
 
