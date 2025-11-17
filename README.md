@@ -2,6 +2,23 @@
 
 A modern, user-friendly web application to help you organize your day, manage your tasks, and achieve your goals efficiently.
 
+## Screenshots
+
+### Home Page
+| Desktop | Mobile |
+|---------|--------|
+| ![Home - PC](public/Readme-Images/Home-PC.png) | ![Home - Mobile](public/Readme-Images/Home-Mobile.png) |
+
+### Tasks Management
+| Desktop | Mobile |
+|---------|--------|
+| ![Tasks - PC](public/Readme-Images/Tasks-PC.png) | ![Tasks - Mobile](public/Readme-Images/Tasks-Mobile.png) |
+
+### About Page
+| Desktop | Mobile |
+|---------|--------|
+| ![About - PC](public/Readme-Images/About-PC.png) | ![Developer - Mobile](public/Readme-Images/Developer-Mobile.png) 
+
 ## Features
 - Create, edit, and delete tasks
 - Track your progress and mark tasks as complete
@@ -52,6 +69,8 @@ src/
     myTasks.jsx     # Task management UI
     navbar.jsx      # Navigation bar
 ```
+
+|
 
 ## Developed by Mohammad Faisal
 
